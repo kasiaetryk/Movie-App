@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Movie Application</title>
+  	<link rel="stylesheet" type="text/css" href="css/reset.css">
+  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <title>Movie Application</title>
   </head>
-  <body ng-app="myMovieApp">
-  	<h1>Movie Application</h1>
-  		<span>Powerd by OMDb API</span>
-  	<div class="content">
-	  	<div ng-controller="MovieController">
-	  		<div class="search">
-		  		<form name = "searchMovie">
-		  			<input type="text" placeholder="Movie title" ng-model="titleParam">
-		  			<input type="submit" value="Search" ng-click="search()">
-		  		</form>
-		  	</div>
-	  		<div class="result" ng-repeat="detail in details">
-	  			<h2 class="title">Title</h2><p>{{detail.Title}}</p>
-	  			<p class="plot">Plot</p><p>{{detail.details.Plot}}</p>
-		  	</div>
+  <body ng-app="myMovieApp">	
+  	<div ng-controller="MovieController">
+  		<div class="search">
+  			<h1>Movie Application</h1>
+				<p class = "describe">Powerd by OMDb API</p>
+	  		<form name = "searchMovie">
+	  			<input type="text" placeholder="Movie title" ng-model="titleParam">
+	  			<input type="submit" value="Search" ng-click="search()">
+	  		</form>
 	  	</div>
+	  	<div class="content">
+	  		<div class="result" id="movieCont" ng-repeat="detail in details">
+	  			<img ng-src="{{detail.Poster}}">
+	  			<h3 class="title">{{detail.Title}}</h3>
+	  			<p class="plot">{{detail.details.Plot}}</p>
+		  	</div>
+		</div>
   	</div>
+  	<script type="text/javascript" src="js/app.js"></script>
   	<script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

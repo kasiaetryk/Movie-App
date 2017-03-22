@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0 auto; }
+
+body {
+  font-family: Roboto;
+  background-color: #FFFFFF;
+  padding: 0 10%; }
+
+h1 {
+  font-family: Raleway;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px #A4A5A5;
+  color: #1B335F;
+  padding-top: 3%; }
+  @media (max-width: 1024px) {
+    h1 {
+      font-size: 45px; } }
+  @media (max-width: 350px) {
+    h1 {
+      font-size: 40px;
+      margin-top: 3%; } }
+
+h3 {
+  font-family: Raleway;
+  font-size: 42px;
+  color: #1B345E;
+  text-decoration: underline; }
+  @media (max-width: 1024px) {
+    h3 {
+      font-size: 27px; } }
+  @media (max-width: 350px) {
+    h3 {
+      font-size: 25px; } }
+
+p {
+  font-size: 18px;
+  padding: 1%;
+  color: #1B345E;
+  text-align: justify;
+  line-height: 25px; }
+  @media (max-width: 1024px) {
+    p {
+      font-size: 15px;
+      line-height: 20px; } }
+
+.fa {
+  font-size: 20px; }
+
+.describe {
+  text-align: center;
+  font-style: italic;
+  color: #D9532B; }
+
+.search {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #FFFFFF; }
+
+form {
+  text-align: center;
+  margin-bottom: 2%;
+  padding: 0 2%; }
+  form input {
+    width: 30%;
+    height: 6%;
+    min-height: 30px;
+    min-width: 200px;
+    margin: 1%;
+    box-shadow: 0 0 13px 0 #888888;
+    border-radius: 5px; }
+    @media (max-width: 650px) {
+      form input {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 3%; } }
+  form input[type=text] {
+    font-size: 15px; }
+  form button {
+    width: 10%;
+    height: 6%;
+    min-height: 30px;
+    min-width: 30px;
+    box-shadow: 0 0 13px 0 #888888;
+    border-radius: 5px; }
+    form button:hover {
+      transition: .5s;
+      background-color: #DD643D;
+      color: #FDFDFE; }
+    @media (max-width: 650px) {
+      form button {
+        min-width: 200px; } }
+
+.content {
+  position: relative;
+  margin-top: 23%; }
+
+.result {
+  margin: 2% 0;
+  padding: 5% 5%;
+  height: 470px;
+  background-color: #F4F6F6;
+  border-radius: 10px; }
+  @media (max-width: 1024px) {
+    .result {
+      height: 350px; } }
+  @media (max-width: 650px) {
+    .result {
+      height: 600px; } }
+  @media (max-width: 350px) {
+    .result {
+      height: 650px; } }
+  .result img {
+    float: left;
+    height: 250px;
+    width: 165px;
+    margin-right: 5%; }
+    @media (max-width: 650px) {
+      .result img {
+        float: none;
+        margin-bottom: 2%; } }
+  .result .title {
+    padding-bottom: 2%; }
+
+/*# sourceMappingURL=main.css.map */
