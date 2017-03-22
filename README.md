@@ -1,12 +1,15 @@
-Synopsis
+# Synopsis
 
-Simple application powerd by OMDb API.
+Simple application powerd by OMDb API
 
+## Motivation
 
-Motivation
+---
 
+## Installation
 
-Installation
+---
 
+## License
 
-License
+---
